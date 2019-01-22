@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aci.yamaha.yamahacustomerarsenal.activity.InquiryActivity"
+    tools:showIn="@layout/activity_inquiry">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/inquirySubTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:text="@string/inquiry_sub_label"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <View
+                android:id="@+id/seperator1"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/inquirySubTextView" />
+
+            <EditText
+                android:id="@+id/inquirySubjectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seperator1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:maxLength="50"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:hint="@string/writeHere"
+                android:padding="7dp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/inquiryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/inquirySubjectEditText"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:text="@string/inquiry_label"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <View
+                android:id="@+id/seperator2"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/inquiryTextView" />
+
+            <EditText
+                android:id="@+id/inquiryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/inquiryTextView"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:maxLength="250"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:hint="@string/writeHere"
+                android:padding="5dp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/inquiryEditText"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/send"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

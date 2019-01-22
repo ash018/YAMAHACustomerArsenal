@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aci.yamaha.yamahacustomerarsenal.activity.ContactActivity"
+    tools:showIn="@layout/activity_contact">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/itsImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/itsyamaha"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:id="@+id/custcareImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itsImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/customercare" />
+
+            <View
+                android:id="@+id/seperator1"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/custcareImageView"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:id="@+id/addrLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seperator1"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ACI Centre"
+                    android:textColor="@color/holo_darker_gray"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="245 Tejgaon Industrial Area\nDhaka-1208"
+                    android:textColor="@color/blackish"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperator2"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/addrLinearLayout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/aciImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seperator2"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/acimotors"
+                android:textColor="@color/colorPrimaryDark" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

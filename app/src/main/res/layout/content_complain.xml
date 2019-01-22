@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aci.yamaha.yamahacustomerarsenal.activity.ComplainActivity"
+    tools:showIn="@layout/activity_complain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/complainIssueLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/complainIssueTextView"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/complain_issues"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_menu_help" />
+
+                    <Spinner
+                        android:id="@+id/issueSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv3"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleComplainTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/complainIssueLL"
+                android:background="@drawable/border_bottom"
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:gravity="left"
+                android:text="@string/what_complain"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/complainEditText"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleComplainTextView"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif"
+                android:gravity="left|top"
+                android:hint="..."
+                android:maxLength="250"
+                android:minHeight="200dp"
+                android:padding="10dp" />
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/complainEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/send"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

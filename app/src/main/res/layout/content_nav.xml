@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aci.yamaha.yamahacustomerarsenal.activity.NavActivity"
+    tools:showIn="@layout/activity_nav">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:divider="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:showDividers="middle"
+        android:weightSum="4">
+
+        <LinearLayout style="@style/MyHoriLLStyle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="90dp"
+                    android:padding="10dp"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View style="@style/HorizontalDivider" />
+
+        <LinearLayout style="@style/MyHoriLLStyle">
+
+            <LinearLayout
+                android:id="@+id/serviceLL"
+                style="@style/MyNavRowLLStyle">
+
+                <ImageView
+                    style="@style/MyNavIVStyle"
+                    android:background="@drawable/color_orange_bg"
+                    android:src="@drawable/yamaha" />
+
+                <LinearLayout style="@style/MyNavLLStyle">
+
+                    <TextView
+                        style="@style/MyNavLLTvStyle"
+                        android:text="@string/service" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/VerticalDivider" />
+
+            <LinearLayout
+                android:id="@+id/inquiryLL"
+                style="@style/MyNavRowLLStyle"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    style="@style/MyNavIVStyle"
+                    android:background="@drawable/color_orange_bg"
+                    android:src="@drawable/yamaha" />
+
+                <LinearLayout style="@style/MyNavLLStyle">
+
+                    <TextView
+                        style="@style/MyNavLLTvStyle"
+                        android:text="@string/inquiry" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/HorizontalDivider" />
+
+        <LinearLayout style="@style/MyHoriLLStyle">
+
+            <LinearLayout
+                android:id="@+id/complainLL"
+                style="@style/MyNavRowLLStyle"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    style="@style/MyNavIVStyle"
+                    android:background="@drawable/color_orange_bg"
+                    android:src="@drawable/yamaha" />
+
+                <LinearLayout style="@style/MyNavLLStyle">
+                    <TextView
+                        style="@style/MyNavLLTvStyle"
+                        android:text="@string/complain" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/VerticalDivider" />
+
+            <LinearLayout
+                android:id="@+id/contactsLL"
+                style="@style/MyNavRowLLStyle"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    style="@style/MyNavIVStyle"
+                    android:background="@drawable/color_orange_bg"
+                    android:src="@drawable/yamaha" />
+
+                <LinearLayout style="@style/MyNavLLStyle">
+
+                    <TextView
+                        style="@style/MyNavLLTvStyle"
+                        android:text="@string/contacts" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/HorizontalDivider" />
+
+        <LinearLayout style="@style/MyHoriLLStyle">
+
+            <LinearLayout
+                android:id="@+id/id5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="90dp"
+                    android:padding="20dp"
+                    android:src="@drawable/motors" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

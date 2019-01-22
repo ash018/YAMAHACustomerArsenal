@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aci.yamaha.yamahacustomerarsenal.activity.ServiceActivity"
+    tools:showIn="@layout/activity_service">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/LocationLL"
+                    style="@style/MyLinearLayoutStyle"
+                    android:layout_below="@+id/seperator1">
+
+                    <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_action_name" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/locationSpinner"
+                        style="@style/MyChildLL2"
+                        android:textColorHint="@color/colorDarkAsh" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/seperator3"
+                    style="@style/MySeperatorStyle"
+                    android:layout_below="@+id/LocationLL" />
+
+                <LinearLayout
+                    android:id="@+id/serviceCenterLL"
+                    style="@style/MyLinearLayoutStyle"
+                    android:layout_below="@+id/seperator3">
+
+                    <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_action_name" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/serviceCenterSpinner"
+                        style="@style/MyChildLL2"
+                        android:textColorHint="@color/colorDarkAsh" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/seperator7"
+                    style="@style/MySeperatorStyle"
+                    android:layout_below="@+id/serviceCenterLL" />
+
+                <LinearLayout
+                    android:id="@+id/chassisLL"
+                    style="@style/MyLinearLayoutStyle"
+                    android:layout_below="@+id/seperator7">
+
+                    <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_action_chasis" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/MyChildLL2"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/chassisEditText"
+                            style="@style/MyEditTextStyle"
+                            android:hint="@string/chassis_hint"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:textColorHint="@color/colorDarkAsh" />
+
+                        <TextView
+                            android:id="@+id/bikeDetailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/seperator4"
+                    style="@style/MySeperatorStyle"
+                    android:layout_below="@+id/chassisLL" />
+
+                <LinearLayout
+                    android:id="@+id/problemDetailLL"
+                    style="@style/MyLinearLayoutStyle"
+                    android:layout_below="@+id/seperator4">
+
+                    <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_action_details" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/MyChildLL2">
+
+                        <EditText
+                            android:id="@+id/problemEditText"
+                            style="@style/MyEditTextStyle"
+                            android:gravity="left|top"
+                            android:maxLength="240"
+                            android:hint="@string/pb_detail"
+                            android:minHeight="50dp"
+                            android:textColorHint="@color/colorDarkAsh" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/seperator8"
+                    style="@style/MySeperatorStyle"
+                    android:layout_below="@+id/problemDetailLL" />
+
+                <Button
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/seperator8"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/send"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/motors" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

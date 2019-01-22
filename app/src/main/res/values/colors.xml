@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF2A24</color>
+    <color name="colorPrimaryDark">#d71e18</color>
+    <color name="colorAccent">#1c4661</color>
+
+    <color name="blackish">#1C3B4F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#F00F00</color>
+    <color name="colorAsh">#EAEAEA</color>
+    <color name="colorDarkAsh">#b7b7b7</color>
+    <color name="orange">#F06522</color>
+    <color name="holo_red_light">#F00F00</color>
+    <color name="holo_purple">#ff00dd</color>
+    <color name="holo_green_light">#00d607</color>
+    <color name="holo_darker_gray">#287300</color>
+    <color name="colorPrimaryLight">#fcd089</color>
+
+    <color name="dark">#F06522</color>
+    <color name="mLight">#F9A11F</color>
+    <color name="lLight">#FCD837</color>
+    <color name="eeee">#eeeeee</color>
+    <color name="cccccc">#CCCCCC</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="pasteColor">#00CDD4</color>
+    <color name="purpleColor">#835194</color>
+    <color name="blueColor">#0088C3</color>
+    <color name="orangeColor">#FF8E01</color>
+    <color name="blue">#1F6BFF</color>
+    <color name="greenDark">#247840</color>
+    <color name="greenLight">#37ba63</color>
+    <color name="divider">#d9d9d9</color>
+</resources>

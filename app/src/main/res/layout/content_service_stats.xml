@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAsh"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aci.yamaha.yamahacustomerarsenal.activity.ServiceStatusActivity"
+    tools:showIn="@layout/activity_service_stats">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/newCircleProgressView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/new_service"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/newTicketTextView"
+                    style="@style/myTextViewStyle"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/newService" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/pendingTicketTextView"
+                    style="@style/myTextViewStyle"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/pendingService" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/pendingCircleProgressView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/receivedTicketTextView"
+                style="@style/myTextViewStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/receivedService" />
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/doneCircleProgressView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalTicketTextView"
+                style="@style/myTextViewStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/totalRaisedService" />
+
+            <TextView
+                android:id="@+id/totalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="60sp"
+                android:textColor="@color/blue"
+                android:text="05"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

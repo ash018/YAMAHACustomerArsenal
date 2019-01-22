@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llname"
+                style="@style/MyLinearLayoutStyle">
+
+                <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_name" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MyChildLL2">
+
+                    <EditText
+                        android:id="@+id/customerNameEditText"
+                        style="@style/MyEditTextStyle"
+                        android:digits="abcdefghijklmnopqrstuvwxyz QWERTYUIOPASDFGHJKLZXCVBNM"
+                        android:hint="@string/name_hint"
+                        android:textColorHint="@color/colorDarkAsh" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperator1"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/llname" />
+
+            <LinearLayout
+                android:id="@+id/llmobileno"
+                style="@style/MyLinearLayoutStyle"
+                android:layout_below="@+id/seperator1">
+
+                <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_mobile" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MyChildLL2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="+88"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/blackish" />
+
+                    <EditText
+                        android:id="@+id/customerMobileEditText"
+                        style="@style/MyEditTextStyle"
+                        android:hint="@string/mobile_hint"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperator5"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/llmobileno" />
+
+            <LinearLayout
+                android:id="@+id/addressLL"
+                style="@style/MyLinearLayoutStyle"
+                android:layout_below="@+id/seperator5">
+
+                <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_address" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MyChildLL2">
+
+                    <EditText
+                        android:id="@+id/customerAddressEditText"
+                        style="@style/MyEditTextStyle"
+                        android:digits="abcdefghijklmnopqrstuvwxyz QWERTYUIOPASDFGHJKLZXCVBNM-"
+                        android:hint="@string/address_hint"
+                        android:maxLines="5"
+                        android:textColorHint="@color/colorDarkAsh" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperator6"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/addressLL" />
+
+            <LinearLayout
+                android:id="@+id/locationLL"
+                style="@style/MyLinearLayoutStyle"
+                android:layout_below="@+id/seperator6">
+
+                <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_address" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/locationSpinnner"
+                    style="@style/MyChildLL2"
+                    android:hint="@string/address_hint"
+                    android:textColorHint="@color/colorDarkAsh" />
+
+                <ImageButton
+                    android:id="@+id/syncLocationImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layoutbg"
+                    android:src="@drawable/sync" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperator7"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/locationLL" />
+
+            <LinearLayout
+                android:id="@+id/passwordLL"
+                style="@style/MyLinearLayoutStyle"
+                android:layout_below="@+id/seperator7">
+
+                <LinearLayout style="@style/MyChildLinearLayoutStyle">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_password" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MyChildLL2">
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        style="@style/MyEditTextStyle"
+                        android:hint="@string/password_hint"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColorHint="@color/colorDarkAsh" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperator8"
+                style="@style/MySeperatorStyle"
+                android:layout_below="@+id/passwordLL" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/seperator8"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/register_text"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/motors" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
